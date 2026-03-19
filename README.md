@@ -1,4 +1,4 @@
-Base de données orientée objet en Java
+# Base de données orientée objet en Java
 
 Ce projet universitaire consiste en la réalisation d’une base de données orientée objet développée en Java, avec une architecture client/serveur.
 Elle permet à plusieurs utilisateurs de se connecter à un serveur et d’interagir avec une base de données via des opérations CRUD.
