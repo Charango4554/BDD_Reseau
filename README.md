@@ -26,13 +26,40 @@ javac -d bin $(find . -name "*.java")
 java -cp bin server.ServerMain
 ```
 
-### 3. Lancer le client
+### 3. Configurer le client
+Dans le fichier : 'clientlib/ClientAPI.java'
+Modifier l'adresse IP du serveur dans "host":
+```java
+    public boolean connect(String host, int port) {
+        try {
+            socket = new Socket(host, port);
+         ...}
+    ...}
+```
+Exemple:
+```java
+    public boolean connect(String host, int port) {
+        try {
+            socket = new Socket("172.31.18.96", port);
+        ...}
+    ...}
+```
+
+### 4. Compilation
+```bash
+javac -d bin $(find . -name "*.java")
+```
+
+### 5. Lancer le client
 ```bash
 java -cp bin client.ClientMain
 ```
 
-## Authentification
-mot de passe = nom d’utilisateur
+## Utilisiation du projet
+
+### Authentification
+Lors du lancement du client,l’authentification est simplifiée: le mot de passe doit être identique au nom d'utilisateur.
+
 
 ## Persistance
 Les données sont sauvegardées dans database.ser
