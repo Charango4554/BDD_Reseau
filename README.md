@@ -7,7 +7,7 @@ La communication entre le client et le serveur repose sur :
 - des sockets TCP
 - la sérialisation d’objets Java
 
-##Description des répértoire:
+## Description des répértoire:
 - common : objets partagés (requêtes, réponses, utilisateurs, objets métier)
 - server : logique serveur, gestion des clients et de la base
 - clientlib : API de communication client → serveur
